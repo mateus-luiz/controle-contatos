@@ -37,3 +37,7 @@ E:\ControleContatos\obj\Debug\net5.0\ControleContatos.pdb
 E:\ControleContatos\obj\Debug\net5.0\ControleContatos.genruntimeconfig.cache
 E:\ControleContatos\obj\Debug\net5.0\ref\ControleContatos.dll
 E:\ControleContatos\obj\Debug\net5.0\ControleContatos.csproj.CopyComplete
+E:\ControleContatos\obj\Debug\net5.0\Razor\Views\Contato\Index.cshtml.g.cs
+E:\ControleContatos\obj\Debug\net5.0\Razor\Views\Contato\Create.cshtml.g.cs
+E:\ControleContatos\obj\Debug\net5.0\Razor\Views\Contato\Edit.cshtml.g.cs
+E:\ControleContatos\obj\Debug\net5.0\Razor\Views\Contato\Delete.cshtml.g.cs

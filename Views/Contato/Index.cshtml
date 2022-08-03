@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Contatos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    
+    <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Celular</th>
+            <th scope="col"><a class="btn btn-outline-success" role="button" asp-controller="Contato" asp-action="Create">Adicionar novo contato</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>jacob@gmail.com</td>
+            <td>9 1234-5678</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-outline-primary mr-3" asp-controller="Contato" asp-action="Edit">Editar</a>
+                    <a role="button" class="btn btn-outline-danger mr-3" asp-controller="Contato" asp-action="Delete">Apagar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Otto</td>
+            <td>thornton@hotmail.com</td>
+            <td>9 1234-5678</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-outline-primary mr-3" asp-controller="Contato" asp-action="Edit">Editar</a>
+                    <a role="button" class="btn btn-outline-danger mr-3" asp-controller="Contato" asp-action="Delete">Apagar</a>
+                </div>
+            </td>
+        </tr>
+            <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>bird@outlook.com</td>
+            <td>9 1234-5678</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-outline-primary mr-3" asp-controller="Contato" asp-action="Edit">Editar</a>
+                    <a role="button" class="btn btn-outline-danger mr-3" asp-controller="Contato" asp-action="Delete">Apagar</a>
+                </div>
+            </td>
+        </tr>
+  </tbody>
+</table>
+</div>
+
