@@ -1,3 +1,4 @@
+@model ContactModel;
 @{
     ViewData["Title"] = "Editar Contato";
 }
@@ -6,21 +7,21 @@
     <h1 class="display-4">@ViewData["Title"]</h1>
 </div>
 
-<form>
+<form asp-controller="Contact" asp-action="Edit" method="post">
     <div class="form-group">
         <label for="name">Nome</label>
-        <input type="text" class="form-control" placeholder="Digite o nome">
+        <input type="text" class="form-control" value="@Model.Name">
     </div>
     <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" class="form-control" placeholder="Digite o nome">
+        <input type="email" class="form-control" value="@Model.Email">
     </div>
     <div class="form-group">
         <label for="phone">celular</label>
-        <input type="text" class="form-control" placeholder="Digite o celular">
+        <input type="text" class="form-control" value="@Model.Phone">
     </div>
     <div class="text-center">
         <button type="submit" class="btn btn-success btn-lg">Salvar</button>
-        <a class="btn btn-secondary btn-lg" role="button" asp-controller="Contato" asp-action="Index">Voltar</a>
+        <a class="btn btn-secondary btn-lg" role="button" asp-controller="Contact" asp-action="Index">Voltar</a>
     </div>
 </form>

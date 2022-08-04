@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Mk1dXXr0M8ywECfqcTer0XIiFEz/uw7VhaeGBOkF3r0gFj+W1sl4+PU6MGNwq6yoazfOBR0Vn/pRJbUfDLonRA==",
+  "dgSpecHash": "5sAzCel2Z1Y0Nzpv3FNlCytz4SIsOHEzQ9QY+eF2tnu6l9AivGrObZGfYAI/9t3KKS60eYb15n94qZynjyArRA==",
   "success": true,
   "projectFilePath": "E:\\ControleContatos\\ControleContatos.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,8 @@
     "C:\\Users\\Sttatic\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Sttatic\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Sttatic\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Sttatic\\.nuget\\packages\\mysqlconnector\\1.3.13\\mysqlconnector.1.3.13.nupkg.sha512",
+    "C:\\Users\\Sttatic\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\5.0.4\\pomelo.entityframeworkcore.mysql.5.0.4.nupkg.sha512",
     "C:\\Users\\Sttatic\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Sttatic\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Sttatic\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
