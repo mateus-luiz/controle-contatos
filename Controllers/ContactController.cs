@@ -48,10 +48,14 @@ namespace ControleContatos.Controllers
         }
 
         [HttpPost]
+        public IActionResult SaveChanges(ContactModel contact){
+            _contactRepository.Edit(contact);
+            return RedirectToAction("Index");
+        }
+
         public IActionResult ConfirmDelete(int id)
         {
-            ContactModel contact = _contactRepository.GetOne(id);
-            _contactRepository.ConfirmDelete(contact);
+            _contactRepository.ConfirmDelete(id);
             return RedirectToAction("Index");
         }
     }

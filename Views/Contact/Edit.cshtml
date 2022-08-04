@@ -7,18 +7,21 @@
     <h1 class="display-4">@ViewData["Title"]</h1>
 </div>
 
-<form asp-controller="Contact" asp-action="Edit" method="post">
+<form asp-controller="Contact" asp-action="SaveChanges" method="post">
+    <div hidden>
+        <input asp-for="Id"></input>
+    </div>
     <div class="form-group">
         <label for="name">Nome</label>
-        <input type="text" class="form-control" value="@Model.Name">
+        <input type="text" class="form-control" asp-for="Name" value="@Model.Name">
     </div>
     <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" class="form-control" value="@Model.Email">
+        <input type="email" class="form-control" asp-for="Email" value="@Model.Email">
     </div>
     <div class="form-group">
         <label for="phone">celular</label>
-        <input type="text" class="form-control" value="@Model.Phone">
+        <input type="text" class="form-control" asp-for="Phone" value="@Model.Phone">
     </div>
     <div class="text-center">
         <button type="submit" class="btn btn-success btn-lg">Salvar</button>

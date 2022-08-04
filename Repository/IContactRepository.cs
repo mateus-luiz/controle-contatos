@@ -16,6 +16,6 @@ namespace ControleContatos.Repository
 
         ContactModel Edit(ContactModel contact);
 
-        ContactModel ConfirmDelete(ContactModel contact);
+        bool ConfirmDelete(int id);
     }
 }

@@ -30,21 +30,34 @@ namespace ControleContatos.Repository
 
         public ContactModel GetOne(int id)
         {
-            ContactModel contact = _context.Contacts.Find(id);
+            ContactModel contact = _context.Contacts.FirstOrDefault(x => x.Id == id);
 
             return contact;
         }
 
         public ContactModel Edit(ContactModel contact)
         {
-            return contact;
+            ContactModel dbContact = GetOne(contact.Id);
+            if(dbContact == null) throw new Exception("Error changing contact!");
+
+            dbContact.Name = contact.Name;
+            dbContact.Email = contact.Email;
+            dbContact.Phone = contact.Phone;
+            _context.Update(dbContact);
+            _context.SaveChanges();
+
+            return dbContact;
         }
 
-        public ContactModel ConfirmDelete(ContactModel contact)
+        public bool ConfirmDelete(int id)
         {
-            _context.Contacts.Remove(contact);
+            ContactModel dbContact = GetOne(id);
+            if(dbContact == null) throw new Exception("Error deleting contact!");
+
+            _context.Contacts.Remove(dbContact);
             _context.SaveChanges();
-            return contact;
+            
+            return true;
         }
     }
 }
